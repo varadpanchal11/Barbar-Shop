@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .hero {
+      background: url('https://i.ibb.co/VNbsnRn/barber.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #111;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #ffcc00;
+      color: #111;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✂️ The Classic Barber Shop</h1>
+    <p>Style • Confidence • Tradition</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#booking">Book Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Look Sharp, Feel Confident</h1>
+    <p>Your style, our passion.</p>
+  </div>
+
+  <section id="services" class="section">
+    <h2>💈 Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Haircut</h3>
+        <p>Classic & modern cuts tailored to you.</p>
+        <p><b>₹250</b></p>
+      </div>
+      <div class="service-card">
+        <h3>Beard Trim</h3>
+        <p>Perfect shaping & styling of your beard.</p>
+        <p><b>₹150</b></p>
+      </div>
+      <div class="service-card">
+        <h3>Shave</h3>
+        <p>Luxury hot towel shave experience.</p>
+        <p><b>₹200</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="section">
+    <h2>📅 Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Service</option>
+        <option>Haircut</option>
+        <option>Beard Trim</option>
+        <option>Shave</option>
+      </select>
+      <input type="date" required>
+      <input type="time" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>📍 Contact Us</h2>
+    <p>📌 Address: 123 Main Street, Your City</p>
+    <p>📞 Phone: +91 9876543210</p>
+    <p>✉️ Email: classicbarber@email.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 The Classic Barber Shop | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
